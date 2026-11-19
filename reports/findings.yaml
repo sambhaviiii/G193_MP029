@@ -1,0 +1,65 @@
+group_id: "G193"
+problem_id: "MP029"
+
+data_issues:
+  leaking_column:
+    present: true
+    column: "pick_time_from_scanner"
+
+  unit_mixup:
+    present: false
+    column: null
+    group_value: null
+    factor: null
+
+  sentinel_value:
+    present: false
+    column: null
+    value: null
+    count: null
+
+  duplicate_rows:
+    present: true
+    count: 40
+
+  stuck_sensor:
+    present: true
+    column: "shift_hour"
+    start_date: "2026-03-29"
+    end_date: "2026-04-14"
+
+  target_typos:
+    present: true
+    count: 13
+
+  spelling_variants:
+    present: true
+    column: "zone_type"
+    true_levels: 3
+
+tracking:
+  experiment_name: "MP029_Warehouse_Picking_Time"
+  best_run_id: "1c07ff7c8eac4fc4b2d064f8141895bd"
+  registered_model_name: "warehouse_picking_model"
+  champion_version: 2
+
+monitoring:
+  psi:
+    items_in_order: 0.0223
+    aisle_distance_m: 0.0360
+    picker_exp_months: 0.0299
+    shelf_height_m: 3.5330
+    shift_hour: 0.2764
+    order_weight_kg: 0.0158
+
+  most_drifted_feature: "shelf_height_m"
+
+  mae_by_group:
+    'Morning': 53.91
+    'Evening': 146.90
+    'Night': 51.77
+
+  worst_served_group: "Evening"
+  mae_v1_on_check: 89.02
+  mae_v2_on_check: 33.64
+  decision: "promote"

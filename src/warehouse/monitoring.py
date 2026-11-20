@@ -1,4 +1,12 @@
 
+"""
+Model Monitoring & Data Drift Analysis Module
+Author: Rohit Mukhopadhyay (S24CSEU0375) - Model Development & MLOps Lead
+SCSE3040 MLOps Lucknow Fulfilment Centre - Warehouse Picking Time Prediction
+- 10-bin Population Stability Index (PSI) computation between train and later data
+- Subgroup performance monitoring across shifts (Morning, Evening, Night)
+"""
+
 import pandas as pd
 import numpy as np
 

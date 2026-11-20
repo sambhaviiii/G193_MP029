@@ -1,4 +1,12 @@
 
+"""
+Time-Based Model Comparison & Promotion Module
+Author: Rohit Mukhopadhyay (S24CSEU0375) - Model Development & MLOps Lead
+SCSE3040 MLOps Lucknow Fulfilment Centre - Warehouse Picking Time Prediction
+- Compares Model V1 (RF) vs Model V2 (GB) on the last 30% of later.csv
+- Evaluates client promotion rule: Promote V2 only if MAE is reduced by >= 5%
+"""
+
 from pathlib import Path
 import pandas as pd
 import mlflow

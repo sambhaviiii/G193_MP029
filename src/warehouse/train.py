@@ -1,4 +1,12 @@
 
+"""
+Model Training V1: Random Forest Regressor Pipeline & MLflow Tracking
+Author: Rohit Mukhopadhyay (S24CSEU0375) - Model Development & MLOps Lead
+SCSE3040 MLOps Lucknow Fulfilment Centre - Warehouse Picking Time Prediction
+- Trains baseline Random Forest Regressor on clean train.csv
+- Tracks hyperparameter runs, data SHA-256 fingerprint, and MAE metrics in MLflow
+"""
+
 from pathlib import Path
 import pandas as pd
 import hashlib

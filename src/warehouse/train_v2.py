@@ -1,4 +1,12 @@
 
+"""
+Model Training V2: Gradient Boosting Regressor Pipeline & Retraining
+Author: Rohit Mukhopadhyay (S24CSEU0375) - Model Development & MLOps Lead
+SCSE3040 MLOps Lucknow Fulfilment Centre - Warehouse Picking Time Prediction
+- Retrains Gradient Boosting Regressor on train.csv + 70% of chronological later.csv
+- Evaluates on unseen 30% of later.csv for model promotion decision
+"""
+
 from pathlib import Path
 import pandas as pd
 import hashlib

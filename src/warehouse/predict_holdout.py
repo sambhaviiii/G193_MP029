@@ -1,4 +1,12 @@
 
+"""
+Holdout Predictions Pipeline
+Author: Rohit Mukhopadhyay (S24CSEU0375) - Model Development & MLOps Lead
+SCSE3040 MLOps Lucknow Fulfilment Centre - Warehouse Picking Time Prediction
+- Generates predictions for holdout_features.csv using champion model
+- Outputs predictions/holdout_predictions.csv (record_id, prediction)
+"""
+
 from pathlib import Path
 import pandas as pd
 import mlflow
